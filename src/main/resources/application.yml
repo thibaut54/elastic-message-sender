@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: monitoring-elastic
+#server:
+#    port: 1000
+
+management:
+    health:
+        elasticsearch:
+            enabled: false
+    endpoints:
+        web:
+            exposure:
+                #                include: hystrix.stream, health, info
+                include: "*"
